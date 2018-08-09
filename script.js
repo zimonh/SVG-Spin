@@ -12,8 +12,9 @@ const group = inp => `<g transform='rotate(${inp.rotate}) translate(${paths[inp.
 
 const rand = e => Math.floor(e * Math.random());
 
-//generate spinning bone circle
 const svg = inp => {
+  /* by: ZIMONH src: https://github.com/zimonh/SVG-Spin
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
 
 	let layer = '',
 		spin = 'spin';
@@ -63,7 +64,7 @@ const settings = {
 document.querySelector('#svg_container').innerHTML = svg(settings);
 
 
-/*settings menu*/
+/*settings menu  - START*/
 
 setTimeout(()=>{
 
@@ -82,7 +83,7 @@ setTimeout(()=>{
 	<inny>size:				<input id="T_size" 			type="range" min="0" 		max="1000" 	step="1" 	value="${settings.size}"  		onmouseup="adjustSettings();"></inny>
 	<inny>minSpeed:			<input id="T_minSpeed" 		type="range" min="0" 		max="300" 			 	value="${settings.minSpeed}"  	onmouseup="adjustSettings();"></inny>
 	<inny>Slow:				<input id="T_Speed" 		type="range" min="0" 		max="100" 	step="1" 	value="${settings.Speed}"  	onmouseup="adjustSettings();"></inny>
-	<inny>Hole:				<input id="T_rand2Stable"	type="range" min="0" 		max="200" 	step="1" 	value="${settings.rand2Stable}"onmouseup="adjustSettings();"></inny>
+	<inny>Hole:				<input id="T_rand2Stable"	type="range" min="0" 		max="300" 	step="1" 	value="${settings.rand2Stable}"onmouseup="adjustSettings();"></inny>
 	<inny>direction:		<input id="T_direction" 	type="range" min="0" 		max="1" 	step="1" 	value="${settings.direction}" 	onmouseup="adjustSettings();"></inny>
 	</div></form>`);
 
@@ -112,3 +113,5 @@ const adjustSettings = ()=>{
 	document.querySelector('#svg_container').innerHTML = svg(hill_1);
 
 };
+
+/*settings menu  - END*/

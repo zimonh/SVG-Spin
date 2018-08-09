@@ -1,15 +1,11 @@
+/* by: ZIMONH src: https://github.com/zimonh/SVG-Spin
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
 
-@-moz-keyframes spin {
-	100% {
-		-moz-transform: rotate(360deg);
-	}
-}
 
-@-webkit-keyframes spin {
-	100% {
-		-webkit-transform: rotate(360deg);
-	}
-}
+/*Animation*/
+@-moz-keyframes spin {100%{-moz-transform: rotate(360deg);}}
+
+@-webkit-keyframes spin {100%{-webkit-transform: rotate(360deg);}}
 
 @keyframes spin {
 	100% {
@@ -18,21 +14,9 @@
 	}
 }
 
+@-moz-keyframes spinR {100% {-moz-transform: rotate(-360deg);}}
 
-
-
-
-@-moz-keyframes spinR {
-	100% {
-		-moz-transform: rotate(-360deg);
-	}
-}
-
-@-webkit-keyframes spinR {
-	100% {
-		-webkit-transform: rotate(-360deg);
-	}
-}
+@-webkit-keyframes spinR {100% {-webkit-transform: rotate(-360deg);}}
 
 @keyframes spinR {
 	100% {
@@ -40,8 +24,6 @@
 		transform: rotate(-360deg);
 	}
 }
-
-
 
 layer {
 	left: 0;
@@ -64,10 +46,14 @@ layer {
 	max-height: 100vh;
 }
 
+/*color and line of the icons*/
 svg path{
 	fill: white;
 	stroke: black;
 	stroke-width:0.6}
+
+
+
 
 
 /*Settings*/
