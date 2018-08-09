@@ -1,3 +1,5 @@
+// START - These paths are Property of 'Raven Bone Hill - Brouwers' and may not be re-used.
+
 const paths = [{
 	d:'M12,29.2c0.4-2.3,3.5-4.7,5.3-6.1c3-2.2,5.6-4,6.8-7.2c1.7-4.7,1.8-10.4-5-13.8c-0.1,0,1.9,2.8,2.3,4.1c0.6,1.8,0.9,8.6-4.4,14.1c-1.9,1.9-5.6,4.2-9.7,2.2c-4.5-2.1-4-6.3-3.2-9.2c1.5-5.1,5.1-9,10.4-11.9C11.7-2.4,4.7,5.8,4.1,6.9C2.2,10.4,0,15.1,0.9,19.4c0.8,4.1,5.1,5.4,7,8.7c0.7,1.2,1.1,3.2,1.4,4.2c0.2,0.8,0.4,3.6,2,2.4 C12.6,33.7,11.7,30.5,12,29.2z',
 	x:-13,y:-16},{
@@ -8,12 +10,14 @@ const paths = [{
 	d:'M12.6,33.3c0-4,0-8.1,0.2-12.1c0.2-3.5-0.2-8,2-10.9c2-2.7,4.4-4.7,2.5-8.2c-0.3-0.6-0.7-0.8-1.2-0.8c-1.6,0-3.9,3-4.5,3.6C11,5.4,10.5,5.6,10,5.6c-1.8,0-3.1-3-4.5-4.4C5.1,0.8,4.8,0.7,4.4,0.7c-1.7,0-3.6,3.5-3.5,4.8c0.4,3.1,4.3,5.8,5.7,8.6c1.8,3.3,0.9,8.8,0.9,12.4c0,4.1,0.1,8.2,0.1,12.3c0,3.8,0.6,8.3-1.8,11.5c-2.2,2.9-4.8,2.8-5.1,6.8c0.1,2.1,1,2.8,2.2,2.8c0.8,0,1.7-0.4,2.7-1c1.2-0.8,2.5-2.8,4-2.8c1.2,0,2.3,1.2,3.3,1.7 c0.4,0.2,0.8,0.3,1.3,0.3c2.4-0.1,5.2-2.6,3.9-4.9c-0.7-1.3-2.3-1.3-3.3-2.1c-1.2-1-1.2-2.6-1.4-4C12.9,42.4,12.6,37.8,12.6,33.3z',
 	x:-10,y:-30}];
 
+// END - These paths are Property of 'Raven Bone Hill - Brouwers' and may not be re-used.
+
 const group = inp => `<g transform='rotate(${inp.rotate}) translate(${paths[inp.number].x + inp.translateX} ${paths[inp.number].y + inp.translateY}) scale(${inp.scale})'><path d="${paths[inp.number].d}"/></g>`;
 
 const rand = e => Math.floor(e * Math.random());
 
 const svg = inp => {
-  /* by: ZIMONH src: https://github.com/zimonh/SVG-Spin
+/* by: ZIMONH src: https://github.com/zimonh/SVG-Spin
 License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
 
 	let layer = '',
