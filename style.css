@@ -48,9 +48,9 @@ layer {
 
 /*color and line of the icons*/
 svg path{
-	fill: white;
-	stroke: black;
-	stroke-width:0.6}
+	fill: rgb(255, 255, 255);
+	stroke: rgb(153, 153, 153);
+	stroke-width: 0.6;}
 
 
 
